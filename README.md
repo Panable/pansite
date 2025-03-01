@@ -49,13 +49,14 @@ This will create the final HTML files in the `_site/` directory.
 
 ```
 /
-├── _includes/      # Reusable templates and partials
-├── _layouts/       # Layout files
-├── _site/          # Generated site output (ignored in Git)
-├── content/        # Main site content
-├── .eleventy.js    # Eleventy configuration (if needed)
-├── package.json    # Dependencies and scripts
-├── README.md       # Project documentation
+├── eleventy.config.mjs   # Eleventy configuration (if needed)
+├── package.json          # Dependencies and scripts
+├── README.md             # Site documentation
+└── src
+    ├── assets/           # CSS, images, fonts, etc.
+    ├── _includes/        # Reusable templates
+    ├── index.njk/        # Index page of website
+    └── projects/         # Markdown files of my projects (to be included in index)
 ```
 
 ## Contributing
