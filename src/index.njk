@@ -32,7 +32,28 @@
             </tr>
         </table> 
         <hr>
-        <h2>My Work</h2>
+        <h2 class="my-work">My Work</h2>
+
+        <article class="project-entry">
+            <div class="project-entry-grid">
+                <div class="project-entry-main">
+                    <header class="project-entry-header">
+                        <h2>James is the goat</h2>
+                    </header>
+                    <section class="project-entry-description">
+                        <p>Exploring james awesome best</p>
+                    </section>
+                    <footer class="project-entry-footer">
+                        C++&emsp;C#&emsp;Python&emsp;GLSL
+                    </footer>
+                </div>
+                <div class="project-entry-image">
+                    <img alt="james be goated" loading="lazy" decoding="async" src="/assets/images/james.jpg" width="808" height="840" sizes="(min-width: 1000px) 209px, (min-width: 580px) 149px, (min-width: 460px) 119px, (min-width: 380px) 101px">
+                </div>
+            </div>
+            <a class="project-entry-link" aria-label="Edge Detection Outlines" href="/notes/edge-detection-outlines/index.html"></a>
+        </article>
+
         <ul>
             {%- for post in collections.projects -%}
             <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
